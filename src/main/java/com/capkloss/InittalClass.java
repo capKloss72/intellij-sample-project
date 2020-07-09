@@ -7,7 +7,7 @@ import java.util.Properties;
 public class InittalClass {
     public static void main(String[] args) throws IOException {
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-        String appConfigPath = rootPath + "password.properties";
+        String appConfigPath = rootPath + "credentials.properties";
 
         Properties appProps = new Properties();
         appProps.load(new FileInputStream(appConfigPath));
